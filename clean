@@ -1,0 +1,5 @@
+#!/bin/zsh
+rm -rf elm-stuff
+rm out/elm.js
+rm pub/app.js
+

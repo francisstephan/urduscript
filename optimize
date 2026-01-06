@@ -1,0 +1,3 @@
+#!/bin/zsh
+elm make src/Urdu.elm --optimize --output out/elm.js
+uglifyjs out/elm.js src/clipboard.js src/init.js src/ouvrir.js -c -m -o pub/app.js
