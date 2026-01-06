@@ -7,7 +7,7 @@ Try live at https://www.eludev.fr/urdu
 # Programming language
 The application is written with Elm, which allows for:
 - easy and clean development
-- very small application size
+- very small application size (less than 33 kb for the generated javascript)
 - easy communication with javascript
 - simple, consistent and efficient tooling
 

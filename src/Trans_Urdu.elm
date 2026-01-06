@@ -100,56 +100,14 @@ trich s =
   if String.length s < 3 then s -- 0 or 1 diacritic, no need to sort
   else
     let
-      h = String.slice 0 1 s -- head character, should be vowel or r
+      h = String.slice 0 1 s -- head character
       b = String.slice 1 5 s -- b contains the diacritics, which will be sorted according to Unicode value
     in
       h ++ (b |> String.toList |> List.map String.fromChar |> List.sort |> List.foldr (++) "")
 
-substhead : String -> String -- for each word, eliminate y in yé, v in vo
-substhead s =
-  let
-    l = String.toList s
-  in
-    String.replace "év" "_v"
-    (String.fromList
-    (case l of
-      'y'::xs ->
-        case xs of
-          [] -> l
-          'é'::ys -> 'é'::ys
-          _ -> l
-      'Y'::xs ->
-        case xs of
-          [] -> l
-          'é'::ys -> 'É'::ys
-          'É'::ys -> 'É'::ys
-          _ -> l
-      'v'::xs ->
-        case xs of
-          [] -> l
-          'o'::ys -> 'o'::ys
-          _ -> l
-      'V'::xs ->
-        case xs of
-          [] -> l
-          'o'::ys  -> 'O'::ys
-          'O'::ys -> 'O'::ys
-          _ -> l
-      _ -> l
-    ) )
-
-
-changehead : String -> String -- apply substhead to each word
-changehead s =
-  s
-  |> String.split " "
-  |> List.map substhead
-  |> String.join " "
-
 transl : String -> String
 transl chaine =
     chaine
-    |> changehead
     |> String.toList
     |> List.map String.fromChar
     |> foldp []
