@@ -24,6 +24,11 @@ For the Arabic emphatics (ص ض ط ظ) we use _S, _D (referring to arabic, not t
 
 Urdu retroflex consonants (ٹ ڈ ڑ) are transcribed as T, D and R
 
+## nun ghunna
+
+To get nun ghunna  ں  (nasalization mark at end of word) type n'
+
+
 ## aspirated consonants
 
 Aspirated consonants are represented as digraphs, just as in Urdu:
@@ -64,6 +69,8 @@ For our urdu script program, this very simply translates to:
 }
 ```
 with `serif` beeing the fallback font in the font-family specifiation.
+
+On my mac, Noto Nastaliq Urdu is also available in MS Word fonts.
 
 # Unrecognized characters
 

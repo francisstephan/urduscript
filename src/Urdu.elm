@@ -53,7 +53,7 @@ subscriptions _ = Sub.none
 view : Model -> Html Msg
 view model =
   div []
-    [ span [style "font-weight" "bold"] [ text "Type on latin (french) keyboard :"]
+    [ span [style "font-weight" "bold"] [ text "Type on latin keyboard :"]
     , button [ class "rebut", onClick Reset ] [ text "Reset" ]
     , button [ class "rebut", onClick CopyToClipboard ] [ text "Copy to clipboard" ]
     , button [ class "rebut", onClick OpenDic ] [ text "Lookup in Wiktionary" ]
