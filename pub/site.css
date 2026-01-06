@@ -17,7 +17,7 @@ body {
   font-family: "Noto Nastaliq Urdu", serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-weight: 400; // weight should be in the 400 -700 range
+  font-weight: 400; /* weight should be in the 400 -700 range */
   font-size: 1.5em;
   margin-top: 30px;
   padding-right:40%;
