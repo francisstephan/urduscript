@@ -22,7 +22,7 @@ For the Arabic emphatics (ص ض ط ظ) we use _S, _D (referring to arabic, not t
 
 ## retroflex consonants
 
-Urdu retroflex consonants (ٹ ڈ ڑ) are transcribed as T, D and R
+Urdu retroflex consonants (ٹ ڈ ڑ) are transcribed as T, D and R with their aspirated versions T',D', R'
 
 ## nun ghunna
 
@@ -77,6 +77,6 @@ On my mac, Noto Nastaliq Urdu is also available in MS Word fonts.
 Any character not recognized is rendered unmodified.
 
 
-# Licence
+# License
 
 MIT

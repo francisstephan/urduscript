@@ -3,7 +3,7 @@ module Trans_Urdu exposing (transl)
 import Dict
 
 latUrdu : Dict.Dict String String
-latUrdu = Dict.fromList [ ("|" , "\u{0627}")
+latUrdu = Dict.fromList [ ("/" , "\u{0627}")
                         ,("b" , "\u{0628}"), ("b'", "\u{0628}\u{06BE}")
                         ,("p" , "\u{067E}"), ("p'", "\u{067E}\u{06BE}")
                         ,("t" , "\u{062A}"), ("t'", "\u{062A}\u{06BE}")
@@ -56,6 +56,7 @@ latUrdu_= Dict.fromList  [ ("t" , "\u{062B}") -- yev --
                          ,("Z" , "\u{0638}")
                          ,("g" , "\u{063A}")
                          ,("a" , "\u{0622}")
+                         ,("/" , "/")
                          ]
 
 diacritics : List String
