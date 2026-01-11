@@ -51,7 +51,7 @@ For an introduction to Google Noto fonts, see [https://en.wikipedia.org/wiki/Not
 To learn how to use Noto fonts, read [https://design.google/library/hot-type-always-fresh](https://design.google/library/hot-type-always-fresh) and [https://developers.google.com/fonts/docs/getting_started](https://developers.google.com/fonts/docs/getting_started)
 
 For our urdu script program, this very simply translates to:
-- 3 lines in index.html (just after the <head> tag):
+- 3 lines in index.html (just after the `<head>` tag):
 ```
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
